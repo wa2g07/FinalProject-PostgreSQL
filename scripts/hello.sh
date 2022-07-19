@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo "HELLO I AM A SCRIPT"
+echo "I AM A SCRIPT AND I HAVE BEEN MODIFIED"
