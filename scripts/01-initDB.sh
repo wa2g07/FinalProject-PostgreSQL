@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-psql --username="$POSTGRES_USER" -c "CREATE DATABASE $POSTGRES_LOGIN_SERVICE_DB;"
+psql -U "$POSTGRES_USER" -c "CREATE DATABASE $POSTGRES_LOGIN_SERVICE_DB;" "$POSTGRES_DB"
+
+psql -U "$POSTGRES_USER" -c "\l+" "$POSTGRES_DB"
+
+
+ 
