@@ -25,7 +25,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/wa2g07/postgres:${{ github.sha }}
+          tags: ghcr.io/wa2g07/postgres:${{ github.sha }} , ghcr.io/wa2g07/postgres:latest
   DeploymentTrigger:
     runs-on: ubuntu-latest
     name: Deployment Trigger
